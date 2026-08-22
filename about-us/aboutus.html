@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewHaven - The Coffee Journey</title>
+    <link rel="shortcut icon" type="x-icon" href="../main/icon.png">
+    <link rel="stylesheet" href="aboutus.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header class="about-header">
+        <a href="../coffee.html" class="logo">
+            <img src="../main/cover.png" alt="BrewHaven Logo">
+        </a>
+        <nav>
+            <a href="../coffee.html" class="nav-back-btn">Back to Home</a>
+        </nav>
+    </header>
+
+    <main class="coffee-journey-main">
+        <h1 data-aos="fade-down" data-aos-duration="1000">The Journey of Coffee: From Bean to Brew</h1>
+        <p class="intro-text" data-aos="fade-up" data-aos-duration="1200">Embark on a fascinating journey to understand the meticulous process behind every cup of BrewHaven coffee. From humble cherries on a tree to the aromatic liquid in your mug, quality and passion are at every stage.</p>
+
+        <section class="stage-section" data-aos="fade-right" data-aos-duration="1200">
+            <div class="stage-content">
+                <h2>1. Cultivation & Harvesting</h2>
+                <p>Our journey begins in lush, high-altitude regions where coffee plants thrive. We partner with farmers who employ sustainable practices, nurturing the plants until the coffee cherries ripen to a vibrant red. Harvesting is often done by hand, carefully selecting only the perfectly ripe cherries to ensure the highest quality beans.</p>
+            </div>
+            <div class="stage-image">
+                <img src="harvesting.jpg" alt="Coffee cherries on a plant being harvested">
+            </div>
+        </section>
+
+        <section class="stage-section reverse" data-aos="fade-left" data-aos-duration="1200">
+            <div class="stage-image">
+                <img src="washing.jpg" alt="Coffee beans being processed">
+            </div>
+            <div class="stage-content">
+                <h2>2. Processing</h2>
+                <p>Once harvested, the coffee cherries undergo processing to separate the bean from the fruit. Common methods include 'wet processing' (washing) and 'dry processing' (natural). Each method imparts unique flavor characteristics to the beans, influencing their final taste profile.</p>
+            </div>
+        </section>
+
+        <section class="stage-section" data-aos="fade-right" data-aos-duration="1200">
+            <div class="stage-content">
+                <h2>3. Drying & Miling</h2>
+                <p>After processing, the beans are carefully dried, either in the sun or using mechanical dryers, to achieve the optimal moisture content. They are then milled to remove any remaining layers of parchment or silverskin, revealing the green coffee bean ready for export.</p>
+            </div>
+            <div class="stage-image">
+                <img src="drying.jpg" alt="Coffee beans drying in the sun">
+            </div>
+        </section>
+
+        <section class="stage-section reverse" data-aos="fade-left" data-aos-duration="1200">
+            <div class="stage-image">
+                <img src="roasting.jpg" alt="Coffee beans being roasted">
+            </div>
+            <div class="stage-content">
+                <h2>4. Roasting</h2>
+                <p>At BrewHaven, roasting is an art form. Our master roasters transform the green beans into aromatic, flavorful coffee through precise temperature control and timing. This crucial step develops the complex sugars and acids, unlocking the unique characteristics of each bean variety.</p>
+            </div>
+        </section>
+
+        <section class="stage-section" data-aos="fade-right" data-aos-duration="1200">
+            <div class="stage-content">
+                <h2>5. Grinding & Brewing</h2>
+                <p>The final stages are where the magic truly happens. Our freshly roasted beans are ground just before brewing, to preserve their freshness and aroma. Whether it's an espresso, pour-over, or cold brew, our baristas craft each beverage with expertise, ensuring you receive the perfect cup every time.</p>
+            </div>
+            <div class="stage-image">
+                <img src="brewing.jpeg" alt="Barista brewing coffee">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BrewHaven. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+        });
+    </script>
+</body>
+</html>
