@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewHaven - Our Menu</title>
+    <link rel="shortcut icon" type="x-icon" href="../main/icon.png">
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <header class="menu-header">
+        <a href="../coffee.html" class="logo">
+            <img src="../main/cover.png" alt="BrewHaven Logo">
+        </a>
+        <nav>
+            <a href="../coffee.html" class="nav-back-btn">Back to Home</a>
+            <a href="../cart/cart.html" class="nav-btn cart-icon-btn">
+                <i class='bx bxs-shopping-bag'></i> Cart (<span id="cart-item-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <main class="menu-main">
+        <h1 class="menu-title" data-aos="fade-down" data-aos-duration="1000">Our BrewHaven Menu</h1>
+        <p class="menu-intro" data-aos="fade-up" data-aos-duration="1200">Discover your perfect brew from our extensive selection of handcrafted coffees, refreshing beverages, and delicious treats.</p>
+
+        <section class="menu-categories" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+            <button class="category-btn active" data-category="all">All Items</button>
+            <button class="category-btn" data-category="hot-coffees">Hot Coffees</button>
+            <button class="category-btn" data-category="cold-coffees">Cold Coffees</button>
+            <button class="category-btn" data-category="teas">Teas & More</button>
+            <button class="category-btn" data-category="pastries">Pastries</button>
+        </section>
+
+        <section class="menu-items-grid" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
+            <div class="menu-item" data-category="hot-coffees" data-id="espresso">
+                <img src="hot coffee/Espresso.png" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>A concentrated shot of rich, aromatic coffee.</p>
+                <span class="item-price">&#8377;120</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="hot-coffees" data-id="americano">
+                <img src="hot coffee/Americano.png" alt="Americano">
+                <h3>Americano</h3>
+                <p>Espresso diluted with hot water, similar to black coffee.</p>
+                <span class="item-price">&#8377;150</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="hot-coffees" data-id="cafe-latte">
+                <img src="hot coffee/Latte.png" alt="Latte">
+                <h3>Cafe Latte</h3>
+                <p>Espresso with steamed milk and a thin layer of foam.</p>
+                <span class="item-price">&#8377;180</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="hot-coffees" data-id="cappuccino">
+                <img src="hot coffee/Cappuccino.png" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Equal parts espresso, steamed milk, and frothed milk.</p>
+                <span class="item-price">&#8377;180</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="hot-coffees" data-id="mocha">
+                <img src="hot coffee/Mocha.png" alt="Mocha">
+                <h3>Mocha</h3>
+                <p>A delightful blend of espresso, chocolate, and steamed milk.</p>
+                <span class="item-price">&#8377;200</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="hot-coffees" data-id="macchiato">
+                <img src="hot coffee/Macchiato.png" alt="Macchiato">
+                <h3>Macchiato</h3>
+                <p>Espresso "stained" with a dash of foamed milk.</p>
+                <span class="item-price">&#8377;160</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="hot-coffees" data-id="flat-white">
+                <img src="hot coffee/Flat-White.png" alt="Flat White">
+                <h3>Flat White</h3>
+                <p>Espresso with velvety steamed milk, less foam than a latte.</p>
+                <span class="item-price">&#8377;190</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="hot-coffees" data-id="cafe-breve">
+                <img src="hot coffee/Cafe-Breve.png" alt="Cafe Breve">
+                <h3>Cafe Breve</h3>
+                <p>Espresso with steamed half-and-half, rich and creamy.</p>
+                <span class="item-price">&#8377;210</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="cold-coffees" data-id="iced-coffee">
+                <img src="cold coffee/iced-coffee.png" alt="Iced Coffee">
+                <h3>Iced Coffee</h3>
+                <p>Chilled coffee served over ice, customize with milk/sweetener.</p>
+                <span class="item-price">&#8377;160</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="cold-coffees" data-id="cold-brew">
+                <img src="cold coffee/cold-brew.png" alt="Cold Brew">
+                <h3>Cold Brew</h3>
+                <p>Coffee steeped in cold water for a smooth, less acidic taste.</p>
+                <span class="item-price">&#8377;200</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="cold-coffees" data-id="coffee-frappe">
+                <img src="cold coffee/coffee-frappe.png" alt="Coffee Frappe">
+                <h3>Coffee Frappe</h3>
+                <p>Blended coffee with ice, milk, and sweet flavors.</p>
+                <span class="item-price">&#8377;220</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="cold-coffees" data-id="caramel-frappuccino">
+                <img src="cold coffee/caramel-frappe.jpg" alt="Caramel Frappuccino">
+                <h3>Caramel Frappuccino</h3>
+                <p>Blended coffee with rich caramel sauce, milk, and whipped cream.</p>
+                <span class="item-price">&#8377;250</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="cold-coffees" data-id="vanilla-iced-latte">
+                <img src="cold coffee/vanilla-latte.png" alt="Vanilla Iced Latte">
+                <h3>Vanilla Iced Latte</h3>
+                <p>Smooth espresso, cold milk, and sweet vanilla syrup over ice.</p>
+                <span class="item-price">&#8377;200</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="teas" data-id="green-tea">
+                <img src="teas/green-tea.png" alt="Green Tea">
+                <h3>Green Tea</h3>
+                <p>Refreshing and antioxidant-rich green tea.</p>
+                <span class="item-price">&#8377;100</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="teas" data-id="iced-tea">
+                <img src="teas/iced-tea.png" alt="Iced Tea">
+                <h3>Iced Tea</h3>
+                <p>Cooling iced tea, available in various fruit flavors.</p>
+                <span class="item-price">&#8377;130</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="teas" data-id="chai-latte">
+                <img src="teas/chai-latte.png" alt="Chai Latte">
+                <h3>Chai Latte</h3>
+                <p>Spiced black tea blended with steamed milk, warm and comforting.</p>
+                <span class="item-price">&#8377;170</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="teas" data-id="herbal-infusion">
+                <img src="teas/herbal-infusion.png" alt="Herbal Infusion">
+                <h3>Herbal Infusion</h3>
+                <p>A soothing, caffeine-free blend of aromatic herbs and fruits.</p>
+                <span class="item-price">&#8377;140</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="pastries" data-id="butter-croissant">
+                <img src="pastries/croissant.png" alt="Croissant">
+                <h3>Butter Croissant</h3>
+                <p>Flaky, buttery French pastry, perfect with coffee.</p>
+                <span class="item-price">&#8377;90</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="pastries" data-id="chocolate-muffin">
+                <img src="pastries/chocolate-muffin.png" alt="Chocolate Muffin">
+                <h3>Chocolate Muffin</h3>
+                <p>Rich and moist chocolate muffin with chocolate chips.</p>
+                <span class="item-price">&#8377;110</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="pastries" data-id="vanilla-cupcake">
+                <img src="pastries/cupcake.png" alt="Vanilla Cupcake">
+                <h3>Vanilla Cupcake</h3>
+                <p>Sweet and fluffy vanilla cupcake with creamy frosting.</p>
+                <span class="item-price">&#8377;120</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="pastries" data-id="chocolate-chip-cookie">
+                <img src="pastries/choco-chip-cookie.png" alt="Chocolate Chip Cookie">
+                <h3>Chocolate Chip Cookie</h3>
+                <p>Classic chewy cookie loaded with rich chocolate chips.</p>
+                <span class="item-price">&#8377;70</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BrewHaven. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../shared.js"></script>   
+    <script src="menu.js"></script> 
+</body>
+</html>
