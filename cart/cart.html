@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewHaven - Your Cart</title>
+    <link rel="stylesheet" href="../shared.css"> 
+    <link rel="stylesheet" href="../coffee.css"> 
+    <link rel="stylesheet" href="cart.css"> 
+    <link rel="shortcut icon" type="x-icon" href="../main/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="../coffee.html" class="logo"><img src="../main/cover.png" alt="Logo"></a>
+        <ul class="navlist" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+            <li><a href="../coffee.html">Home</a></li>
+            <li><a href="../about-us/aboutus.html">About</a></li>
+            <li><a href="../menu/menu.html">Menu</a></li>
+            <li><a href="../coffee.html#testimonials">Reviews</a></li>
+            <li><a href="../coffee.html">Contact</a></li>
+        </ul>
+        <div class="right-content" data-aos="flip-down" data-aos-duration="1200" data-aos-delay="300">
+            <a href="cart.html" class="nav-btn"><i class='bx bxs-shopping-bag'></i> Cart (<span id="cart-item-count">0</span>)</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="cart-hero" data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="300">
+        <h2>Your Shopping Cart</h2>
+    </section>
+
+    <section class="cart-section">
+        <div class="cart-container">
+            <div id="cart-items" data-aos="fade-down" data-aos-duration="1400" data-aos-delay="300">
+                <p class="empty-cart-message">Your cart is empty.</p>
+            </div>
+
+            <div class="cart-summary" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300">
+                <h3>Cart Summary</h3>
+                <p>Subtotal: &#8377;<span id="cart-subtotal">0.00</span></p>
+                <p>Tax (0%): &#8377;<span id="cart-tax">0.00</span></p>
+                <p class="cart-total">Total: &#8377;<span id="cart-total">0.00</span></p>
+                <button class="btn checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BrewHaven. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../shared.js"></script>
+    <script src="../script.js"></script>
+    <script src="cart.js"></script> </body>
+</html>
