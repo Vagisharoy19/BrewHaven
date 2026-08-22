@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewHaven - Membership</title>
+    <link rel="shortcut icon" type="x-icon" href="../main/icon.png">
+    <link rel="stylesheet" href="membership.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="membership-header">
+        <a href="../coffee.html" class="logo">
+            <img src="../main/cover.png" alt="BrewHaven Logo">
+        </a>
+        <nav>
+            <a href="../coffee.html" class="nav-back-btn">Back to Home</a>
+        </nav>
+    </header>
+
+    <main class="membership-main">
+        <div class="membership-container">
+            <h1 class="membership-title">Join BrewHaven Membership</h1>
+            <p class="membership-description">Unlock exclusive benefits, discounts, and early access to new blends by becoming a BrewHaven member!</p>
+
+            <div class="membership-form-section">
+                <form id="membershipForm" class="membership-form">
+                    <h2>Register / Login</h2>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    <button type="submit" class="btn membership-submit-btn">Sign Up</button>
+                    <p class="form-toggle">Already a member? <a href="../login/login.html" id="showLogin">Login here</a></p>
+                </form>
+
+                <form id="loginForm" class="membership-form" style="display: none;">
+                    <h2>Login to Your Account</h2>
+                    <div class="form-group">
+                        <label for="loginEmail">Email:</label>
+                        <input type="email" id="loginEmail" name="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password:</label>
+                        <input type="password" id="loginPassword" name="loginPassword" required>
+                    </div>
+                    <button type="submit" class="btn membership-submit-btn">Login</button>
+                    <p class="form-toggle">New to BrewHaven? <a href="#" id="showRegister">Register here</a></p>
+                </form>
+            </div>
+
+            <div class="membership-benefits">
+                <h2>Membership Benefits</h2>
+                <ul>
+                    <li>Exclusive member-only discounts on all coffee.</li>
+                    <li>Early access to new seasonal blends and limited editions.</li>
+                    <li>Free birthday coffee on your special day.</li>
+                    <li>Invitations to private tasting events and workshops.</li>
+                    <li>Personalized recommendations and special offers.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BrewHaven. All rights reserved.</p>
+    </footer>
+
+    <script src="membership.js"></script> 
+</body>
+</html>
